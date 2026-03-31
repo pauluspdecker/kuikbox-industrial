@@ -3,77 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUIKBOX | Ultra-Performance Enclosures</title>
+    <title>KUIKBOX | Industrial Unit Selection</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
         body { background-color: #050505; color: #fff; font-family: 'Inter', sans-serif; }
-        .hero-gradient { background: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%); }
-        .accent-border { border-left: 5px solid #facc15; }
+        .unit-card { border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s ease; }
+        .unit-card:hover { border-color: #facc15; background: rgba(250, 204, 21, 0.05); }
     </style>
 </head>
-<body class="hero-gradient">
+<body>
 
-    <nav class="p-6 flex justify-between items-center border-b border-white/5">
-        <div class="text-2xl font-black tracking-tighter uppercase">KUIKBOX</div>
-        <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest text-gray-400">
-            <a href="#" class="hover:text-yellow-400 transition">Engineering</a>
-            <a href="#" class="hover:text-yellow-400 transition">Installation</a>
-            <a href="#" class="hover:text-yellow-400 transition">Store</a>
-        </div>
+    <nav class="p-6 border-b border-white/5 flex justify-between items-center">
+        <div class="text-2xl font-black uppercase tracking-tighter">KUIKBOX <span class="text-yellow-400">HQ</span></div>
+        <div class="text-xs font-mono text-gray-500 uppercase tracking-widest">Testing Mode Active</div>
     </nav>
 
-    <section class="max-w-7xl mx-auto px-6 py-24 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div class="space-y-8">
-            <div class="accent-border pl-6">
-                <h1 class="text-7xl md:text-8xl font-black uppercase tracking-tighter leading-none">
-                    BORN IN<br><span class="text-yellow-400">STEEL.</span>
-                </h1>
+    <header class="max-w-7xl mx-auto px-6 py-16">
+        <h1 class="text-5xl font-black uppercase tracking-tighter mb-4 text-white">Select Your <span class="text-yellow-400">Enclosure</span></h1>
+        <p class="text-gray-400 max-w-xl">Select a unit below to proceed to our secure $1.00 testing checkout. All units are 16-gauge galvanized steel, UL listed, and field-tested.</p>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-6 pb-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="unit-card p-8 rounded-sm flex flex-col justify-between">
+            <div>
+                <span class="text-xs font-mono text-yellow-400 uppercase tracking-widest">Model KB-01</span>
+                <h2 class="text-3xl font-black uppercase mt-2 mb-4">Unit One</h2>
+                <p class="text-sm text-gray-400 mb-6 leading-relaxed text-balance">The original compact powerhouse. Perfect for standard residential retrofits.</p>
             </div>
-            <p class="text-xl text-gray-400 max-w-lg leading-relaxed">
-                65% faster install times. 16-gauge galvanized protection. The new standard for electrical enclosures, engineered for the field.
-            </p>
-            
-            <div class="pt-4">
-                <a href="YOUR_STRIPE_LINK_HERE" class="inline-block bg-white text-black font-black uppercase px-10 py-5 text-lg hover:bg-yellow-400 transition transform hover:scale-105">
-                    Order Test Unit — $1.00
-                </a>
-                <p class="text-xs text-gray-500 mt-4 font-mono uppercase tracking-widest">
-                    Live Testing Mode // Encrypted via Stripe
-                </p>
-            </div>
+            <a href="YOUR_STRIPE_LINK_UNIT_1" class="block text-center bg-white text-black font-black uppercase py-4 hover:bg-yellow-400 transition">Order Unit 1 — $1.00</a>
         </div>
 
-        <div class="relative aspect-video bg-white/5 border border-white/10 rounded flex items-center justify-center overflow-hidden group cursor-pointer">
-            <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
-            <div class="text-center z-10">
-                <div class="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition">
-                    <svg class="w-8 h-8 text-black fill-current" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"/></svg>
-                </div>
-                <p class="font-bold uppercase tracking-widest text-sm text-yellow-400">Play Flick 180° Video</p>
+        <div class="unit-card p-8 rounded-sm flex flex-col justify-between">
+            <div>
+                <span class="text-xs font-mono text-yellow-400 uppercase tracking-widest">Model KB-02</span>
+                <h2 class="text-3xl font-black uppercase mt-2 mb-4">Unit Two</h2>
+                <p class="text-sm text-gray-400 mb-6 leading-relaxed text-balance">Extended capacity for multi-circuit setups. 16-gauge durability as standard.</p>
             </div>
+            <a href="YOUR_STRIPE_LINK_UNIT_2" class="block text-center bg-white text-black font-black uppercase py-4 hover:bg-yellow-400 transition">Order Unit 2 — $1.00</a>
         </div>
-    </section>
 
-    <section class="bg-white text-black py-20 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div class="unit-card p-8 rounded-sm flex flex-col justify-between">
             <div>
-                <h3 class="text-4xl font-black italic">01.</h3>
-                <p class="font-bold uppercase mt-2">16-Gauge Steel</p>
-                <p class="text-sm mt-2">Indestructible galvanized build quality designed to withstand the harshest job site environments.</p>
+                <span class="text-xs font-mono text-yellow-400 uppercase tracking-widest">Model KB-03</span>
+                <h2 class="text-3xl font-black uppercase mt-2 mb-4">Unit Three</h2>
+                <p class="text-sm text-gray-400 mb-6 leading-relaxed text-balance">Industrial-grade master unit. Built for heavy commercial environments.</p>
             </div>
-            <div>
-                <h3 class="text-4xl font-black italic">02.</h3>
-                <p class="font-bold uppercase mt-2">UL Listed</p>
-                <p class="text-sm mt-2">Fully compliant and safety certified. We don't cut corners on engineering.</p>
-            </div>
-            <div>
-                <h3 class="text-4xl font-black italic">03.</h3>
-                <p class="font-bold uppercase mt-2">Pro Speed</p>
-                <p class="text-sm mt-2">Designed by contractors, for contractors. Shave hours off your install time.</p>
-            </div>
+            <a href="YOUR_STRIPE_LINK_UNIT_3" class="block text-center bg-white text-black font-black uppercase py-4 hover:bg-yellow-400 transition">Order Unit 3 — $1.00</a>
         </div>
-    </section>
+
+        </section>
 
 </body>
 </html>
